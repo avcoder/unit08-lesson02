@@ -40,7 +40,7 @@ transition: slide-left
 - `cd mobile-react-native-01`
 - `npm i`
 - `npm start`
-- scan QR code with phone, or press appropriate key to emulate on phone or web
+- scan QR code with phone via Camera/Expo Go, or press appropriate key to emulate on phone or web
 
 ---
 transition: slide-left
