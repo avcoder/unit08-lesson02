@@ -58,6 +58,7 @@ transition: slide-left
 ---
 
 # Example Folder Structure for Expo Router
+main entry point has to be index.tsx
 
 ```md
 ├── app/                    # All routes go here (like pages/)
@@ -101,9 +102,23 @@ transition: slide-left
 
 # Exercise: Using Expo Router (pg.2)
 
-- in package.json, change to `"main": "expo-router/entry"`
+- in `package.json`, change to `"main": "expo-router/entry"`
+- in `app.json`, under "expo", insert new key/value of  `"scheme": noteapp"`
+   - required for deep linking;  Other apps on phone will only respond if url request matches their name of scheme
 - create new folder `./app` and move `App.tsx` into it (let VS Code update imports)
 - rename `App.tsx` to `index.tsx`
+- may need to `npm start` again 
+- create file `./app/_layout.tsx` where we'll define each of the screens that matches our filename
+   ```tsx
+   import { Stack } from "expo-router";
+   export default function Layout() {
+      return (
+         <Stack>
+            <Stack.Screen name="index" options={ title: "Note App List"}> 
+         </Stack>
+      )
+   }
+   ```
 
 
 ---
