@@ -35,7 +35,12 @@ transition: slide-left
 
 # Recap
 
-- Where we last left off https://github.com/avcoder/mobile-react-native-01
+- Where we last left off 
+- `git clone https://github.com/avcoder/mobile-react-native-01`
+- `cd mobile-react-native-01`
+- `npm i`
+- `npm start`
+- scan QR code with phone, or press appropriate key to emulate on phone or web
 
 ---
 transition: slide-left
@@ -154,7 +159,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Navigate Screens in Expo Router using `<Link>`
+# 1. Navigate Screens in Expo Router using `<Link>`
 
 ```tsx
 import { Link } from "expo-router";
@@ -167,6 +172,14 @@ import { Link } from "expo-router";
 
 - Does tapping the corresponding link navigate appropriately?
 - Does swiping between screens work too?
+
+---
+transition: slide-left
+---
+
+# 2. Navigate Screens in Expo Router programmatically 
+
+
 
 ---
 layout: image-right
