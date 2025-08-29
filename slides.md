@@ -126,7 +126,7 @@ transition: slide-left
 
 # Stack Navigation
 
-- displaying screens by default uses a stack data structure; new screens are rendered on top of current screen
+- by default,a stack data structure is used; new screens are rendered on top of current screen
 - create a couple of screens: add `./app/counter.tsx` and `./app/idea.tsx`
    ```tsx
    import { Text, View, StyleSheet } from "react-native";
@@ -149,6 +149,24 @@ transition: slide-left
       text: { fontSize: 24, }
    });
    ```
+
+---
+transition: slide-left
+---
+
+# Navigate Screens in Expo Router using `<Link>`
+
+```tsx
+import { Link } from "expo-router";
+...
+<View...>
+   <Link href="/counter">
+      Goto counter
+   </Link>
+```
+
+- Does tapping the corresponding link navigate appropriately?
+- Does swiping between screens work too?
 
 ---
 layout: image-right
