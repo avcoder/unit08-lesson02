@@ -166,7 +166,7 @@ import { Link } from "expo-router";
 ...
 <View...>
    <Link href="/counter">
-      Goto counter
+      Goto /counter
    </Link>
 ```
 
@@ -179,7 +179,24 @@ transition: slide-left
 
 # 2. Navigate Screens in Expo Router programmatically 
 
+- in counter.tsx, add TouchableOpacity
+   ```tsx
+   import { useRouter } from "expo-router";
+   export default function CounterScreen() {
+      const router = useRouter();
+      return (
+         <View>
+            <TouchableOpacity onPress={() => router.navigate("/idea")}>
+               <Text>Go to /idea</Text>
+            </TouchableOpacity>
+   ```
+- note that we had a choice between `router.push`, `router.navigate`, `router.replace` -- wt diff?
 
+---
+transition: slide-left
+---
+
+# 3. Modal Navigation
 
 ---
 layout: image-right
