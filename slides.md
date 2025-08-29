@@ -60,8 +60,7 @@ transition: slide-left
 # Example Folder Structure for Expo Router
 
 ```md
-my-expo-app/
-├── app/                     # All routes go here (like pages/)
+├── app/                    # All routes go here (like pages/)
 │   ├── index.tsx           # Route: "/"
 │   ├── about.tsx           # Route: "/about"
 │   ├── settings/           # Nested route group
