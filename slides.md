@@ -17,11 +17,11 @@ mdc: true
 ---
 
 # React Native
-Mobile Development: Unit 08 - Lesson 01
+Mobile Development: Unit 08 - Lesson 02
 
-- [ ] Aspects to Consider when Designing for Mobile
-- [ ] MacOS vs Android
-- [ ] Install Expo Go App on your phone
+- [ ] Expo Router, Navigation
+- [ ] Modal, Button Tabs, Nested Navigation
+- [ ] Input, Scrolling, Lists
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
