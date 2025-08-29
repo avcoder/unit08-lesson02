@@ -132,10 +132,10 @@ class: text-left
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
-- 👩‍💻 [React Native on FCC](https://www.freecodecamp.org/news/build-a-meditation-app-with-react-native-expo-router/)
-- 📄 [UI: React Native Paper](https://reactnativepaper.com/)
-- ⚛️ [UI: React Native Elements](https://reactnativeelements.com/)
-- 🧭 [React Navigation](https://reactnavigation.org/)
+- 🎨 [SVG tool](https://www.fffuel.co/sssvg/)
+- 🖍️ [Design Resources](https://www.toools.design/)
+- 🏂 [client-side db](https://www.instantdb.com/)
+- ⚛️ [Numberflow Component](https://number-flow.barvian.me/)
 
 
 <br>
