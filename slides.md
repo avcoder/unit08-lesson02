@@ -120,6 +120,35 @@ transition: slide-left
    }
    ```
 
+---
+transition: slide-left
+---
+
+# Stack Navigation
+
+- displaying screens by default uses a stack data structure; new screens are rendered on top of current screen
+- create a couple of screens: add `./app/counter.tsx` and `./app/idea.tsx`
+   ```tsx
+   import { Text, View, StyleSheet } from "react-native";
+
+   export default function CounterScreen() { /* add function IdeaScreen() and change text below to Idea */
+      return (
+         <View style={styles.container}>
+            <Text style={styles.text}>Counter</Text> 
+         </View>
+      )
+   }
+
+   const styles = StyleSheet.create({
+      container: {
+         flex: 1,
+         justifyContent: "center",
+         alignItems: "center",
+         backgroundColor: "#ffffff"
+      },
+      text: { fontSize: 24, }
+   });
+   ```
 
 ---
 layout: image-right
