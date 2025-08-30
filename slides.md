@@ -258,7 +258,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Nested navigation
+# Nested navigation (pg.1)
 
 - You can mix/match navigations (ex: stack within a tab, stack within a modal etc.)
 - If we want to refactor `counter.tsx` into a stack:
@@ -286,6 +286,14 @@ transition: slide-left
 - Change default tab color via `<Tabs screenOptions={{ tabBarActiveTintColor: ? }}>`
 
 ---
+transition: slide-left
+---
+
+# Nested navigation (pg.2)
+
+
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/rn.png
@@ -310,6 +318,23 @@ class: text-left
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
+---
+transition: slide-left
+---
+
+# Input
+
+---
+transition: slide-left
+---
+
+# Scrolling
+
+---
+transition: slide-left
+---
+
+# Lists
 
 ---
 transition: slide-left
