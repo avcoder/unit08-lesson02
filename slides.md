@@ -19,8 +19,8 @@ mdc: true
 # React Native
 Mobile Development: Unit 08 - Lesson 02
 
-- [ ] Expo Router, Navigation
-- [ ] Modal, Button Tabs, Nested Navigation
+- [ ] Expo Router
+- [ ] Various Navigations
 - [ ] Input, Scrolling, Lists
 
 <div class="abs-br m-6 text-xl">
@@ -161,7 +161,6 @@ transition: slide-left
 
 # 1. Navigate Screens in Expo Router using `<Link>`
 
-- There are 3 main ways to navigate in Expo Router: 1. Link, 2. programmatically 3. Modal
 ```tsx
 import { Link } from "expo-router";
 ...
@@ -199,17 +198,25 @@ transition: slide-left
 
 # 3. Modal Navigation
 
-- must locate Modals above/adjacent to other screens in order to work
+- must define Modals above/adjacent to other screens in order to work
 - note in our `_layout.tsx` we still only defined one screen
-   - Can define more screens if needed (ex: if we have different options)
-- let's add more screens
+   - Can define more screens if needed (ex: if we have different properties)
+- let's add more screens, in _layout.tsx
    ```tsx
    <Stack>
       <Stack.Screen name="index" options={{ title: "List" }} />
-      <Stack.Screen name="counter" options={{ title: "Counter", presentation: "modal" }} />
-      <Stack.Screen name="idea" options={{ title: "Idea" }} />
+      <Stack.Screen name="counter" options={{ title: "Counter", presentation: "modal", animation: "fade" }} />
+      <Stack.Screen name="idea" options={{ title: "Idea"}} />
    </Stack>
    ```
+- try adding `presentation: "modal"` and animations to other screens
+
+---
+transition: slide-left
+---
+
+# 4. Tabbed Navigation
+
 
 ---
 layout: image-right
