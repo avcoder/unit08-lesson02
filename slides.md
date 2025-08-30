@@ -209,7 +209,7 @@ transition: slide-left
       <Stack.Screen name="idea" options={{ title: "Idea"}} />
    </Stack>
    ```
-   
+
 ## Exercise
 - try adding `presentation: "modal"` and animations to other screens
 
@@ -256,6 +256,7 @@ transition: slide-left
 
 ## Exercise:
 - Add an icon for the Counter tab, and the Idea tab
+- Change default tab color via `<Tabs screenOptions={{ tabBarActiveTintColor: ? }}>`
 
 ---
 layout: image-right
