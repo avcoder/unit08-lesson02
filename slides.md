@@ -215,7 +215,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# 4. Tabbed Navigation
+# 4. Tabbed Navigation (pg.1)
 
 - to use Tabbed Navigation, make the following changes in _layout.tsx:
    ```tsx
@@ -234,7 +234,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# 4b. Use Icons for Tabs
+# Use Icons for Tabs (pg.2)
 
 - Use icons for tabs: [@expo/vector-icons](https://icons.expo.fyi/) 
    - add to new options prop to Tabs.Screen:
