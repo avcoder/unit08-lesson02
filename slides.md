@@ -246,6 +246,11 @@ transition: slide-left
       }
    }
    ```
+- What do you notice about the active tab colours now? 
+- Hover over tabBarIcon to see what other props it can take.  Change accordingly:
+   ```tsx
+   tabBarIcon: ({ color, size }) => ...?
+   ```
 
 ---
 layout: image-right
