@@ -254,6 +254,33 @@ transition: slide-left
    tabBarIcon: ({ color, size }) => ...?
    ```
 
+---
+transition: slide-left
+---
+
+# Nested navigation
+
+- You can mix/match navigations (ex: stack within a tab, stack within a modal etc.)
+- If we want to refactor `counter.tsx` into a stack:
+   - create new folder `./app/counter`
+   - move `counter.tsx` in `/counter`
+   - rename it to index.tsx
+   - add `/counter/_layout.tsx` and in it:
+   ```tsx
+   import { Stack } from "expo-router";
+   export default function Layout() {
+      return (
+         <Stack>
+            <Stack.Screen name="index" options={{ title: "Counter" }}/>
+         </Stack>
+      )
+   }
+   ```
+   - How many headers of "Counter" do you see now?  Let's hide one of them.  In `./app/_layout.tsx`
+   ```tsx
+   <Tabs.Screen ...  options={{...  headerShown: false, ... }}
+   ```
+
 ## Exercise:
 - Add an icon for the Counter tab, and the Idea tab
 - Change default tab color via `<Tabs screenOptions={{ tabBarActiveTintColor: ? }}>`
