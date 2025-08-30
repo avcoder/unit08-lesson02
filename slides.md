@@ -217,6 +217,35 @@ transition: slide-left
 
 # 4. Tabbed Navigation
 
+- to use Tabbed Navigation, make the following changes in _layout.tsx:
+   ```tsx
+   import { Tabs } from "expo-router";
+   ...
+   <Tabs>
+      <Tabs.Screen name="index" options={{ title: "List" }} />
+      <Tabs.Screen name="counter" options={{ title: "Counter" }} />
+      <Tabs.Screen name="idea" options={{ title: "Idea"}} />
+   </Tabs>
+   ```
+   - Try it out.  Do our previous navigation method still work too?
+   - Let's clean our previous navigation methods: Remove our `<TouchableOpacity>` our `<Link>`
+
+---
+transition: slide-left
+---
+
+# 4b. Use Icons for Tabs
+
+- Use icons for tabs: [@expo/vector-icons](https://icons.expo.fyi/) 
+   - add to new options prop to Tabs.Screen:
+   ```tsx
+   options={
+      ...
+      tabBarIcon: () => {
+         return <Feather name="list" size={24} color="black" />
+      }
+   }
+   ```
 
 ---
 layout: image-right
