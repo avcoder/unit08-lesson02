@@ -209,6 +209,8 @@ transition: slide-left
       <Stack.Screen name="idea" options={{ title: "Idea"}} />
    </Stack>
    ```
+   
+## Exercise
 - try adding `presentation: "modal"` and animations to other screens
 
 ---
@@ -241,9 +243,9 @@ transition: slide-left
    ```tsx
    options={
       ...
-      tabBarIcon: () => {
+      tabBarIcon: () => (
          return <Feather name="list" size={24} color="black" />
-      }
+      )
    }
    ```
 - What do you notice about the active tab colours now? 
@@ -251,6 +253,9 @@ transition: slide-left
    ```tsx
    tabBarIcon: ({ color, size }) => ...?
    ```
+
+## Exercise:
+- Add an icon for the Counter tab, and the Idea tab
 
 ---
 layout: image-right
