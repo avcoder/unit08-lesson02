@@ -161,6 +161,7 @@ transition: slide-left
 
 # 1. Navigate Screens in Expo Router using `<Link>`
 
+- There are 3 main ways to navigate in Expo Router: 1. Link, 2. programmatically 3. Modal
 ```tsx
 import { Link } from "expo-router";
 ...
@@ -198,6 +199,18 @@ transition: slide-left
 
 # 3. Modal Navigation
 
+- must locate Modals above/adjacent to other screens in order to work
+- note in our `_layout.tsx` we still only defined one screen
+   - Can define more screens if needed (ex: if we have different options)
+- let's add more screens
+   ```tsx
+   <Stack>
+      <Stack.Screen name="index" options={{ title: "List" }} />
+      <Stack.Screen name="counter" options={{ title: "Counter", presentation: "modal" }} />
+      <Stack.Screen name="idea" options={{ title: "Idea" }} />
+   </Stack>
+   ```
+
 ---
 layout: image-right
 transition: slide-left
@@ -213,6 +226,7 @@ class: text-left
 - 🖍️ [Design Resources](https://www.toools.design/)
 - 🏂 [client-side db](https://www.instantdb.com/)
 - ⚛️ [Numberflow Component](https://number-flow.barvian.me/)
+- 🦹‍♀️ [Better Auth](https://www.better-auth.com/)
 
 
 <br>
