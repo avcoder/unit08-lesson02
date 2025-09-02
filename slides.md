@@ -366,6 +366,7 @@ transition: slide-left
 ## Exercise
 - see [TextInput docs](https://reactnative.dev/docs/textinput#keyboardtype)
 - try adding prop `<TextInput ... keyboardType="phone-pad">` or some other prop to see what happens to keyboard
+- see [TextInput docs](https://reactnative.dev/docs/textinput) - get to know some of the interesting props on the right side (ex: autoComplete etc)
 
 
 ---
