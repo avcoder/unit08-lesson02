@@ -410,11 +410,16 @@ transition: slide-left
    const handleSubmit = () => {
       if (value) {
          const newShoppingList = [
-            { id: new Date().toISOString()},
+            { id: new Date().toISOString(), name: value },
             ...shoppingList
          ]
+
+         setShoppingList(newShoppingList);
+         setValue("")
       }
    }
+   ...
+   onSubmitEditing={handleSubmit}
 ```
 
 ---
