@@ -311,7 +311,7 @@ transition: slide-left
 ---
 layout: image-right
 transition: slide-left
-image: /assets/rn.png
+image: /assets/harvard.png
 backgroundSize: 444px 380px
 class: text-left
 ---
@@ -319,6 +319,7 @@ class: text-left
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
+- 🏫 [Harvard's CS50 React Native](https://pll.harvard.edu/course/cs50s-mobile-app-development-react-native)
 - 🎨 [SVG tool](https://www.fffuel.co/sssvg/)
 - 🖍️ [Design Resources](https://www.toools.design/)
 - 🏂 [client-side db](https://www.instantdb.com/)
@@ -352,7 +353,7 @@ transition: slide-left
 
 # Input (pg.2)
 
-- Let's add some state to keep track of our items in our `/counter/index.tsx`
+- Let's add some state to keep track of what is typed in our `/counter/index.tsx`
    ```tsx
    import { useState } from "react";
    ...
@@ -369,6 +370,52 @@ transition: slide-left
 - see [TextInput docs](https://reactnative.dev/docs/textinput) - get to know some of the interesting props on the right side (ex: autoComplete etc)
 - try adding prop `<TextInput ... returnKeyType="done">` (see keyboard return key text)
 
+---
+transition: slide-left
+---
+
+# Input (pg.3)
+
+- to submit, use `onSubmitEditing` callback
+   ```tsx
+   <TextInput ... onSubmitEditing={() => console.log("submit")}
+   ```
+   - click "Done" button -- do you see the log in the terminal?
+- Let's add some data in our `/counter/index.tsx`
+   ```tsx
+   type ShoppingListItemType = {
+      id: string;
+      name: string;
+   };
+   const initialList: ShoppingListItemType[] = [
+      {id: "1", name: "apples"},
+      {id: "1", name: "bananas"},
+      {id: "1", name: "carrots"},
+   ]
+   ...
+   const [shoppingList, setShoppingList] = useState<ShoppingListItemType>(initialList)
+   ...
+   {shoppingList.map(item => (
+      <ShoppingListItem name={item.name} key={item.id} />
+   ))}
+   ```
+   
+---
+transition: slide-left
+---
+
+# Input (pg.4)
+
+```tsx
+   const handleSubmit = () => {
+      if (value) {
+         const newShoppingList = [
+            { id: new Date().toISOString()},
+            ...shoppingList
+         ]
+      }
+   }
+```
 
 ---
 transition: slide-left
