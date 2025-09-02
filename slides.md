@@ -309,32 +309,6 @@ transition: slide-left
 - What do you think `hitSlop` does?  fyi - `asChild` works with `hitSlop`
 
 ---
-layout: image-right
-transition: slide-left
-image: /assets/harvard.png
-backgroundSize: 444px 380px
-class: text-left
----
-
-# 10 minute break
-
-🍦 Cool Tips, Trends and Resources:
-- 🏫 [Harvard's CS50 React Native](https://pll.harvard.edu/course/cs50s-mobile-app-development-react-native)
-- 🎨 [SVG tool](https://www.fffuel.co/sssvg/)
-- 🖍️ [Design Resources](https://www.toools.design/)
-- 🏂 [client-side db](https://www.instantdb.com/)
-- ⚛️ [Numberflow Component](https://number-flow.barvian.me/)
-- 🦹‍♀️ [Better Auth](https://www.better-auth.com/)
-
-
-<br>
-<hr>
-<br>
-
-- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
-- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
-
----
 transition: slide-left
 ---
 
@@ -423,12 +397,47 @@ transition: slide-left
 ```
 - try typing some items to the list - does it work?
 
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/harvard.png
+backgroundSize: 444px 380px
+class: text-left
+---
+
+# 10 minute break
+
+🍦 Cool Tips, Trends and Resources:
+- 🏫 [Harvard's CS50 React Native](https://pll.harvard.edu/course/cs50s-mobile-app-development-react-native)
+- 🎨 [SVG tool](https://www.fffuel.co/sssvg/)
+- 🖍️ [Design Resources](https://www.toools.design/)
+- 🏂 [client-side db](https://www.instantdb.com/)
+- ⚛️ [Numberflow Component](https://number-flow.barvian.me/)
+- 🦹‍♀️ [Better Auth](https://www.better-auth.com/)
+
+
+<br>
+<hr>
+<br>
+
+- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
 ---
 transition: slide-left
 ---
 
 # Scrolling
 
+- Try adding lots of items so that it "should be" scrollable -- how does this differ from the web?
+- To make it scrollable, we need to replace `<View>` with `<ScrollView>`
+   ```tsx
+   import { ..., ScrollView } from 'react-native';
+   ...
+   <ScrollView style={styles.container}>
+   ```
+   - does it scroll now?
 ---
 transition: slide-left
 ---
