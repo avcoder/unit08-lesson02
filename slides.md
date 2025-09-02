@@ -421,6 +421,7 @@ transition: slide-left
    ...
    onSubmitEditing={handleSubmit}
 ```
+- try typing some items to the list - does it work?
 
 ---
 transition: slide-left
