@@ -454,7 +454,25 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Lists
+# ScrollView vs FlatList
+
+| Feature / Criteria                        | `ScrollView`                                            | `FlatList`                                                               |
+| ----------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Best For**                              | Small lists with a limited number of items              | Large or dynamic lists with many items                                   |
+| **Performance**                           | ❌ Poor with large data sets – renders all items at once | ✅ Optimized for performance – renders only what's visible (windowing)    |
+| **Ease of Use**                           | ✅ Simple to implement for short static lists            | ⚠️ Slightly more complex due to item rendering and keys                  |
+| **Lazy Loading / Virtualization**         | ❌ Not supported                                         | ✅ Built-in support (virtualization, windowing, etc.)                     |
+| **Support for Pull to Refresh**           | ❌ Requires manual setup                                 | ✅ Built-in via `onRefresh` and `refreshing` props                        |
+
+
+
+---
+transition: slide-left
+---
+
+# FlatList
+a more optimized way of rendering large lists of items
+
 
 ---
 transition: slide-left
