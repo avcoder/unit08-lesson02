@@ -315,7 +315,11 @@ transition: slide-left
 # Input (pg.1)
 
 - fyi - There is no `<form>` component in React Native; must handle all inputs individually
-- in `/app/index.tsx` add `<TextInput placeholder="apples" />` below `<View style={stlyes.container}>`
+- in `/app/index.tsx` add `<TextInput>`:
+   ```tsx
+   <View style={stlyes.container}>
+      <TextInput placeholder="apples" />
+   ``` 
    - do you see anything? then try adding borderColor, borderWidth, padding, marginHorizontal, marginBottom, fontSize, borderRadius etc.
    - remove `justifyContent` within `container` styles to move everything to top of screen
    - add `paddingTop: 12`
@@ -473,6 +477,26 @@ transition: slide-left
 # FlatList
 a more optimized way of rendering large lists of items
 
+- there is no equivalent of FlatList on the web
+- we'll need to replace our `<ScrollView>` with `<FlatList>`
+```tsx
+import { ... FlatList } from 'react-native';
+...
+<FlatList
+   data={shoppingList}
+   contentContainerStyle={styles.contentContainer}
+   stickyHeaderIndices={[0]}
+   renderItem={({item}) => {
+      return <ShoppingListItem name={item.name} />
+   }}
+   ListHeaderComponent={() => (
+      <TextInput
+         placeholder="apples"
+         ...
+      />
+   )}
+/>
+```
 
 ---
 transition: slide-left
