@@ -337,13 +337,36 @@ class: text-left
 transition: slide-left
 ---
 
-# Input
+# Input (pg.1)
 
 - fyi - There is no `<form>` component in React Native; must handle all inputs individually
 - in `/app/index.tsx` add `<TextInput placeholder="apples" />` below `<View style={stlyes.container}>`
    - do you see anything? then try adding borderColor, borderWidth, padding, marginHorizontal, marginBottom, fontSize, borderRadius etc.
    - remove `justifyContent` within `container` styles to move everything to top of screen
+   - add `paddingTop: 12`
 - on your Expo Go, if you tap on the input now, does the keyboard widget open? (if using simulator, may have to toggle keyboard to open via I/O > Keyboard > Toggle Software Keyboard;  Now try.)
+
+---
+transition: slide-left
+---
+
+# Input (pg.2)
+
+- Let's add some state to keep track of our items in our `/counter/index.tsx`
+   ```tsx
+   import { useState } from "react";
+   ...
+   const [value, setValue] = useState("");
+   ...
+   <TextInput ... value={value} onChangeText={setValue}>
+   ```
+- Try typing in the input now, does it type accordingly?
+- What's the difference between onChange and onChangeText?
+
+## Exercise
+- see [TextInput docs](https://reactnative.dev/docs/textinput#keyboardtype)
+- try adding prop `<TextInput ... keyboardType="phone-pad">` or some other prop to see what happens to keyboard
+
 
 ---
 transition: slide-left
