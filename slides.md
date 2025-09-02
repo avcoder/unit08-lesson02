@@ -339,6 +339,12 @@ transition: slide-left
 
 # Input
 
+- fyi - There is no `<form>` component in React Native; must handle all inputs individually
+- in `/app/index.tsx` add `<TextInput placeholder="apples" />` below `<View style={stlyes.container}>`
+   - do you see anything? then try adding borderColor, borderWidth, padding, marginHorizontal, marginBottom, fontSize, borderRadius etc.
+   - remove `justifyContent` within `container` styles to move everything to top of screen
+- on your Expo Go, if you tap on the input now, does the keyboard widget open? (if using simulator, may have to toggle keyboard to open via I/O > Keyboard > Toggle Software Keyboard;  Now try.)
+
 ---
 transition: slide-left
 ---
