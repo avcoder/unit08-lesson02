@@ -398,6 +398,7 @@ transition: slide-left
 - try typing some items to the list - does it work?
 
 
+
 ---
 layout: image-right
 transition: slide-left
@@ -438,6 +439,17 @@ transition: slide-left
    <ScrollView style={styles.container}>
    ```
    - does it scroll now?
+- try commenting out our `paddingTop` from our StyleSheet.create - does scrolling work now?
+- try adding a new props:
+   ```tsx
+   <ScrollView ... contentContainerStyle={styles.contentContainer} stickyheaderIndices={[0]}>
+   ...
+   content: { padding: 12 } // remove previous paddingTop 
+   ...
+   contentContainer: { paddingBottom: 24, } 
+   ```
+    - try scrolling now
+      - add textInput style `backgroundColor: theme.colorWhite` so that header is not transparent
 ---
 transition: slide-left
 ---
