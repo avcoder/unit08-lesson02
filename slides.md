@@ -363,9 +363,9 @@ transition: slide-left
 - Try typing in the input now, does it type accordingly?
 - What's the difference between onChange and onChangeText?
 
-## Exercise
+## Exercise 
 - see [TextInput docs](https://reactnative.dev/docs/textinput#keyboardtype)
-- try adding prop `<TextInput ... keyboardType="phone-pad">` or some other prop to see what happens to keyboard
+- add `<TextInput ... keyboardType="phone-pad">` (see keyboard now)
 - see [TextInput docs](https://reactnative.dev/docs/textinput) - get to know some of the interesting props on the right side (ex: autoComplete etc)
 - try adding prop `<TextInput ... returnKeyType="done">` (see keyboard return key text)
 
