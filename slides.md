@@ -291,7 +291,22 @@ transition: slide-left
 
 # Nested navigation (pg.2)
 
-
+- Create new page `/counter/history.tsx`; just copy/paste from idea.tsx but change to `<Text...>History</Text>`
+- To begin navigating to our Counter page, our `/counter/_layout.tsx`
+   ```tsx
+   <Stack.Screen ... headerRight: () => <Text>Hello</Text>;
+   ```
+- Find an appropriate "history" [icon](https://icons.expo.fyi/) 
+- Replace our Text component with:
+   ```tsx
+   <Link href="/counter/history" asChild>
+      <Pressable hitSlop={20}>
+         <MaterialIcons name="history" size={32} color={theme.colorGrey}>
+      </Pressable>
+   </Link>
+   ``` 
+- try clicking your history icon, does it navigate appropriately to the history page?
+- What do you think `hitSlop` does?  fyi - `asChild` works with `hitSlop`
 
 ---
 layout: image-right
