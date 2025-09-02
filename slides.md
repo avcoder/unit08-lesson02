@@ -474,7 +474,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# FlatList
+# FlatList (pg.1)
 a more optimized way of rendering large lists of items
 
 - there is no equivalent of FlatList on the web
@@ -486,18 +486,29 @@ import { ... FlatList } from 'react-native';
    data={shoppingList}
    contentContainerStyle={styles.contentContainer}
    stickyHeaderIndices={[0]}
-   renderItem={({item}) => {
-      return <ShoppingListItem name={item.name} />
-   }}
-   ListHeaderComponent={() => (
-      <TextInput
-         placeholder="apples"
-         ...
-      />
-   )}
+   renderItem={({item}) => <ShoppingListItem name={item.name} />}
+   ListHeaderComponent={<TextInput placeholder="apples" />}
 />
 ```
 
+---
+transition: slide-left
+---
+
+# FlatList (pg.2)
+
+- we can even specify a component if list is empty (avoids `if (shoppingList.length === 0)`)
+   ```tsx
+   <FlatList ...
+      ListEmptyComponent={
+         <View styles={styles.listEmptyContainer}>
+            <Text>Your list is empty</Text>
+         </View>
+      }
+   ```
+   - may have to add styles: justifyContent, alignItems, marginVertical
+   - can now get rid of our initialList; thus initialize our `setInitialList([])`
+   - Does empty component now show?
 ---
 transition: slide-left
 ---
